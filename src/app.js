@@ -7,7 +7,8 @@ app.use(express.json());
 
 
 //Routes
-
+app.use("/api/products", productRouter);
+app.use("/api/carts", cartsRouter);
 
 
 app.listen(PORT, () => {
