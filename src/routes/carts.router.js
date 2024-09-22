@@ -20,7 +20,7 @@ router.get("/:cid", async (req, res) => {
     let cartId = parseInt(req.params.cid); 
 
     try {
-        const cartWanted = await cartManager.getCartByiD(cartId); 
+        const cartWanted = await cartManager.getCartById(cartId); 
 
         res.json(cartWanted.products); 
     } catch (error) {
